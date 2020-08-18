@@ -1,12 +1,13 @@
 
 class programa():
-    def __init__(self):
+    def __init__(self,nombre):
         print("un programa vacio")
+        self.nombre = nombre
 
     def saludar(self):
-        print("hola mundo")
+        print("hola",self.nombre)
         
 
-p = programa()
+p = programa('cheto')
 p.saludar()
 
